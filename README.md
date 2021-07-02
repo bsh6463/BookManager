@@ -9,3 +9,6 @@
    5) Entity Relationship : https://bsh-developer.tistory.com/47?category=1024330
    6) Persistence Context : https://bsh-developer.tistory.com/68?category=1032082
    7) 프로젝트 작성 중 에러관련 : https://bsh-developer.tistory.com/70?category=0
+   
+   '21.07.02 update
+   8) Entity Cache : https://bsh-developer.tistory.com/73
