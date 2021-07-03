@@ -31,14 +31,14 @@ public class EntityManagerTest {
     @Test
     void cacheFindTest(){
 
-//        System.out.println(userRepository.findByEmail("hyun@naver.com"));
-//       System.out.println(userRepository.findByEmail("hyun@naver.com"));
-//        System.out.println(userRepository.findByEmail("hyun@naver.com"));
+        System.out.println(userRepository.findByEmail("hyun@naver.com"));
+       System.out.println(userRepository.findByEmail("hyun@naver.com"));
+       System.out.println(userRepository.findByEmail("hyun@naver.com"));
 //        System.out.println(userRepository.findById(1L).get());
 //        System.out.println(userRepository.findById(1L).get());
 //        System.out.println(userRepository.findById(1L).get());
 
-        userRepository.deleteById(1L);
+      //  userRepository.deleteById(1L);
 
     }
 
