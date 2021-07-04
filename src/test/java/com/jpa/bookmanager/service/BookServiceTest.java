@@ -1,5 +1,6 @@
 package com.jpa.bookmanager.service;
 
+import com.jpa.bookmanager.domain.Book;
 import com.jpa.bookmanager.domain.BookAndAuthor;
 import com.jpa.bookmanager.repository.AuthorRepository;
 import com.jpa.bookmanager.repository.BookRepository;
@@ -30,5 +31,18 @@ class BookServiceTest {
 
         System.out.println("books : " + bookRepository.findAll());
         System.out.println("Authors : " + authorRepository.findAll());
+    }
+
+    @Test
+    void isolationTest(){
+        Book book = new Book();
+
+        book.setName("JPA 강의");
+        bookRepository.save(book);
+
+        bookService.get(1L);
+
+        System.out.println(">>>>" + bookRepository.findAll());
+
     }
 }

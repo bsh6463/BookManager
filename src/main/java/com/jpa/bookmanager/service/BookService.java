@@ -8,6 +8,7 @@ import org.hibernate.annotations.NaturalId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import lombok.*;
+import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
@@ -33,6 +34,20 @@ public class BookService {
 
         throw new RuntimeException("오류 발생해서 DB commit 발생하지 않음.");
 
+    }
+
+    @Transactional(isolation = Isolation.READ_COMMITTED)
+    public void get(Long id){
+
+        System.out.println(">>>" + bookRepository.findById(id));
+        System.out.println(">>>" + bookRepository.findAll());
+
+        System.out.println(">>>" + bookRepository.findById(id));
+        System.out.println(">>>" + bookRepository.findAll());
+
+        Book book = bookRepository.findById(id).get();
+        book.setName("바뀌나?");
+        bookRepository.save(book);
     }
 
 
