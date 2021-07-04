@@ -21,7 +21,7 @@ public class BookService {
     private final AuthorRepository authorRepository;
 
     @Transactional
-    public void putBookAndAuthor() throws Exception {
+    public void putBookAndAuthor(){
 
         Book book = new Book();
         book.setName("JPA 시작작");
@@ -31,7 +31,9 @@ public class BookService {
         author.setName("hyun");
         authorRepository.save(author); // DB insert
 
-        throw new Exception("오류 발생해서 DB commit 발생하지 않음.");
+        throw new RuntimeException("오류 발생해서 DB commit 발생하지 않음.");
 
     }
+
+
 }
