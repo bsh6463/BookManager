@@ -5,6 +5,7 @@ import javax.persistence.*;
 
 import com.jpa.bookmanager.domain.listener.Auditable;
 import lombok.*;
+import org.hibernate.annotations.DynamicUpdate;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -20,6 +21,7 @@ import java.util.List;
 @EntityListeners(value = AuditingEntityListener.class)
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
+//@DynamicUpdate
 public class Book extends BaseEntity {
 
     @Id

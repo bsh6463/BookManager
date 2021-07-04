@@ -6,6 +6,12 @@ com/jpa/bookmanager/domain/UserTest.java
  com.jpa.bookmanager.domain.UserTest
 com/jpa/bookmanager/controller/HelloWorldControllerTest.java
  com.jpa.bookmanager.controller.HelloWorldControllerTest
+com/jpa/bookmanager/service/UserServiceTest.java
+ com.jpa.bookmanager.service.UserServiceTest
+com/jpa/bookmanager/service/EntityManagerTest.java
+ com.jpa.bookmanager.service.EntityManagerTest
+com/jpa/bookmanager/service/BookServiceTest.java
+ com.jpa.bookmanager.service.BookServiceTest
 com/jpa/bookmanager/repository/AuthorRepositoryTest.java
  com.jpa.bookmanager.repository.AuthorRepositoryTest
 com/jpa/bookmanager/repository/BookRepositoryTest.java
