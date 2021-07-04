@@ -38,7 +38,7 @@ public class UserService {
         entityManager.merge(user);
 
 //        entityManager.flush();
-//        entityManager.clear();
+        entityManager.clear();
 
 
         User user1 = userRepository.findById(1L).get();
