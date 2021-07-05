@@ -11,6 +11,8 @@ import lombok.*;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
+
 @Service
 @RequiredArgsConstructor
 public class BookService {
@@ -20,6 +22,8 @@ public class BookService {
 
    // @Autowired
     private final AuthorRepository authorRepository;
+
+    private final EntityManager entityManager;
 
     @Transactional
     public void putBookAndAuthor(){
@@ -36,19 +40,24 @@ public class BookService {
 
     }
 
-    @Transactional(isolation = Isolation.READ_COMMITTED)
+    @Transactional(isolation = Isolation.SERIALIZABLE)
     public void get(Long id){
 
         System.out.println(">>>" + bookRepository.findById(id));
         System.out.println(">>>" + bookRepository.findAll());
 
+        entityManager.clear();
+
         System.out.println(">>>" + bookRepository.findById(id));
         System.out.println(">>>" + bookRepository.findAll());
 
-        Book book = bookRepository.findById(id).get();
-        book.setName("바뀌나?");
-        bookRepository.save(book);
-    }
+        bookRepository.update();
 
+        entityManager.clear();
+
+//        Book book = bookRepository.findById(id).get();
+//        book.setName("바뀌나?");
+//        bookRepository.save(book);
+    }
 
 }
