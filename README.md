@@ -27,5 +27,6 @@
    '21.07.05 update
    
    12) Transaction(Isolation): https://bsh-developer.tistory.com/78
+                              https://bsh-developer.tistory.com/79
                      
  
