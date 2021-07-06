@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import lombok.*;
 import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
@@ -25,6 +26,8 @@ public class BookService {
 
     private final EntityManager entityManager;
 
+    private final AuthorService authorService;
+
     @Transactional
     public void putBookAndAuthor(){
 
@@ -32,11 +35,18 @@ public class BookService {
         book.setName("JPA 시작작");
         bookRepository.save(book); //DB insert
 
-        Author author = new Author();
-        author.setName("hyun");
-        authorRepository.save(author); // DB insert
+        try{ //try catch로 묶지 않으면 exception이 putBookAndAuthor로 전파됨..오류가 전파되지 않도록
+            authorService.putAuthor();
+        }catch (RuntimeException e){
 
-        throw new RuntimeException("오류 발생해서 DB commit 발생하지 않음.");
+        }
+
+
+//        Author author = new Author();
+//        author.setName("hyun");
+//        authorRepository.save(author); // DB insert
+//
+       // throw new RuntimeException("오류가 발생했드아. transaction은 어찌될까");
 
     }
 
