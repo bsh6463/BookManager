@@ -87,7 +87,7 @@ public class BookRepositoryTest {
         reviewRepository.save(review);
     }
 
-    @Transactional
+    //@Transactional
     @Test
     public void bookCascadeTest(){
 
