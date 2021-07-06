@@ -10,14 +10,14 @@ com/jpa/bookmanager/repository/BookRepository.java
  com.jpa.bookmanager.repository.BookRepository
 com/jpa/bookmanager/repository/UserHistoryRepository.java
  com.jpa.bookmanager.repository.UserHistoryRepository
-com/jpa/bookmanager/domain/Book.java
- com.jpa.bookmanager.domain.Book
+com/jpa/bookmanager/domain/listener/MyEntityListener.java
+ com.jpa.bookmanager.domain.listener.MyEntityListener
 com/jpa/bookmanager/domain/UserHistory.java
  com.jpa.bookmanager.domain.UserHistory
 com/jpa/bookmanager/domain/Gender.java
  com.jpa.bookmanager.domain.Gender
-com/jpa/bookmanager/domain/Review.java
- com.jpa.bookmanager.domain.Review
+com/jpa/bookmanager/repository/ReviewRepository.java
+ com.jpa.bookmanager.repository.ReviewRepository
 com/jpa/bookmanager/configuration/JpaConfiguration.java
  com.jpa.bookmanager.configuration.JpaConfiguration
 com/jpa/bookmanager/BookmanagerApplication.java
@@ -36,22 +36,22 @@ com/jpa/bookmanager/repository/PublisherRepository.java
  com.jpa.bookmanager.repository.PublisherRepository
 com/jpa/bookmanager/repository/UserRepository.java
  com.jpa.bookmanager.repository.UserRepository
-com/jpa/bookmanager/domain/BookAndAuthor.java
- com.jpa.bookmanager.domain.BookAndAuthor
+com/jpa/bookmanager/repository/BookReviewInfoRepository.java
+ com.jpa.bookmanager.repository.BookReviewInfoRepository
 com/jpa/bookmanager/domain/User.java
  com.jpa.bookmanager.domain.User
  com.jpa.bookmanager.domain.User$UserBuilder
-com/jpa/bookmanager/domain/listener/MyEntityListener.java
- com.jpa.bookmanager.domain.listener.MyEntityListener
-com/jpa/bookmanager/repository/BookReviewInfoRepository.java
- com.jpa.bookmanager.repository.BookReviewInfoRepository
-com/jpa/bookmanager/repository/ReviewRepository.java
- com.jpa.bookmanager.repository.ReviewRepository
+com/jpa/bookmanager/service/AuthorService.java
+ com.jpa.bookmanager.service.AuthorService
+com/jpa/bookmanager/service/BookService.java
+ com.jpa.bookmanager.service.BookService
+com/jpa/bookmanager/domain/BookAndAuthor.java
+ com.jpa.bookmanager.domain.BookAndAuthor
+com/jpa/bookmanager/domain/Review.java
+ com.jpa.bookmanager.domain.Review
 com/jpa/bookmanager/domain/Publisher.java
  com.jpa.bookmanager.domain.Publisher
 com/jpa/bookmanager/domain/BookReviewInfo.java
  com.jpa.bookmanager.domain.BookReviewInfo
-com/jpa/bookmanager/service/BookService.java
- com.jpa.bookmanager.service.BookService
-com/jpa/bookmanager/service/AuthorService.java
- com.jpa.bookmanager.service.AuthorService
+com/jpa/bookmanager/domain/Book.java
+ com.jpa.bookmanager.domain.Book

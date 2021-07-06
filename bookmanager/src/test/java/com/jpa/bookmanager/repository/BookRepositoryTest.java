@@ -86,4 +86,31 @@ public class BookRepositoryTest {
 
         reviewRepository.save(review);
     }
+
+    @Transactional
+    @Test
+    public void bookCascadeTest(){
+
+        Book book = new Book();
+
+        book.setName("JPA 공부하자");
+
+        Publisher publisher  = new Publisher();
+        publisher.setName("패스트캠");
+
+        book.setPublisher(publisher);
+        bookRepository.save(book);
+
+        System.out.println("books : " + bookRepository.findAll());
+        System.out.println("publishers : " + publisherRepository.findAll());
+
+        Book book1 = bookRepository.findById(1L).get();
+        book1.getPublisher().setName("탐사수");
+
+        bookRepository.save(book1);
+        System.out.println("publishers : " + publisherRepository.findAll());
+
+
+    }
+
 }

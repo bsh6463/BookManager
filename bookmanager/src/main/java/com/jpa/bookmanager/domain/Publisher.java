@@ -1,6 +1,7 @@
 package com.jpa.bookmanager.domain;
 
 import lombok.*;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -22,5 +23,9 @@ public class Publisher extends BaseEntity{
     @OneToMany
     @JoinColumn(name = "publisher_id")
     private List<Book> books = new ArrayList<>();
+
+    public void addBook(Book book){
+        this.books.add(book);
+    }
 
 }
