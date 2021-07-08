@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.persistence.Transient;
 import javax.transaction.Transactional;
+import java.util.Arrays;
 
 @SpringBootTest
 public class BookRepositoryTest {
@@ -101,15 +102,93 @@ public class BookRepositoryTest {
         book.setPublisher(publisher);
         bookRepository.save(book);
 
-        System.out.println("books : " + bookRepository.findAll());
-        System.out.println("publishers : " + publisherRepository.findAll());
+        //System.out.println("books : " + bookRepository.findAll());
+        //System.out.println("publishers : " + publisherRepository.findAll());
 
         Book book1 = bookRepository.findById(1L).get();
         book1.getPublisher().setName("탐사수");
 
         bookRepository.save(book1);
+        //System.out.println("publishers : " + publisherRepository.findAll());
+
+        Book book2 = bookRepository.findById(1L).get();
+
+        //bookRepository.delete(book2);
+
+        //publisherRepository.delete(book2.getPublisher());
+
+        Book book3 = bookRepository.findById(1L).get();
+
+        book3.setPublisher(null);
+
+        bookRepository.save(book3);
+
+
+        System.out.println("books : " + bookRepository.findAll());
+        System.out.println("publishers : " + publisherRepository.findAll());
+        System.out.println("book3 - publisher : " + bookRepository.findById(1L).get().getPublisher());
+
+        //System.out.println(publisherRepository.findById(1L).get().getBooks());
+
+    }
+
+    @Test
+    void bookRemoveCascadeTest(){
+
+        bookRepository.deleteById(1L);
+
+        System.out.println("books : " + bookRepository.findAll());
+
         System.out.println("publishers : " + publisherRepository.findAll());
 
+        bookRepository.findAll().forEach(book -> System.out.println(book.getPublisher()));
+
+
+    }
+
+    @Test
+    void orphanTest(){
+
+        Book book = new Book();
+        book.setName("자식");
+
+
+        Publisher publisher = new Publisher();
+        publisher.setName("부모");
+
+        book.setPublisher(publisher);
+        publisher.addBook(book);
+
+        bookRepository.save(book);
+        publisherRepository.save(publisher);
+
+        //book.setPublisher(null);
+        //publisher.getBooks().clear();
+        //bookRepository.deleteById(1L);
+        //publisherRepository.deleteById(1L);
+
+        //부모 entity에서 자식 entity삭제
+        System.out.println(publisher.getBooks().get(0));
+       publisher.getBooks().remove(0);
+
+        //bookRepository.save(book);
+        publisherRepository.save(publisher);
+        //bookRepository.save(book);
+
+        System.out.println("books : " + bookRepository.findAll());
+        System.out.println("book-publisher : " + bookRepository.findById(1L).get().getPublisher());
+        System.out.println("publishers : " + publisherRepository.findAll());
+    }
+
+
+    @Test
+    void softDelete(){
+
+        bookRepository.findAll().forEach(System.out::println);
+
+        //bookRepository.findByCategoryIsNull().forEach(System.out::println);
+
+        //bookRepository.findByDeletedFalse().forEach(System.out::println);
 
     }
 
