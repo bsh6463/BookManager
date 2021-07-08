@@ -32,5 +32,10 @@
    
    13) Transaction(Propagation): https://bsh-developer.tistory.com/79
    14) Cascade : https://bsh-developer.tistory.com/80
+
+
+   '21.07.07
+   
+   15) orphan removal : https://bsh-developer.tistory.com/81
                      
  
