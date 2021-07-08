@@ -14,7 +14,7 @@ com/jpa/bookmanager/service/BookServiceTest.java
  com.jpa.bookmanager.service.BookServiceTest
 com/jpa/bookmanager/repository/AuthorRepositoryTest.java
  com.jpa.bookmanager.repository.AuthorRepositoryTest
-com/jpa/bookmanager/repository/BookReviewInfoRepositoryTest.java
- com.jpa.bookmanager.repository.BookReviewInfoRepositoryTest
 com/jpa/bookmanager/repository/BookRepositoryTest.java
  com.jpa.bookmanager.repository.BookRepositoryTest
+com/jpa/bookmanager/repository/BookReviewInfoRepositoryTest.java
+ com.jpa.bookmanager.repository.BookReviewInfoRepositoryTest

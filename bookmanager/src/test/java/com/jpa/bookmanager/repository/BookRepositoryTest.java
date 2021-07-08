@@ -4,13 +4,13 @@ import com.jpa.bookmanager.domain.Book;
 import com.jpa.bookmanager.domain.Publisher;
 import com.jpa.bookmanager.domain.Review;
 import com.jpa.bookmanager.domain.User;
+import org.hibernate.result.UpdateCountOutput;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import javax.persistence.Transient;
+import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
-import java.util.Arrays;
 
 @SpringBootTest
 public class BookRepositoryTest {
@@ -23,6 +23,8 @@ public class BookRepositoryTest {
     private ReviewRepository reviewRepository;
     @Autowired
     private UserRepository userRepository;
+
+    private EntityManager entityManager;
 
 
     @Test
@@ -146,11 +148,16 @@ public class BookRepositoryTest {
 
     }
 
+
     @Test
     void orphanTest(){
 
+
         Book book = new Book();
         book.setName("자식");
+
+        //Book book2  = new Book();
+        //book2.setName("자식2");
 
 
         Publisher publisher = new Publisher();
@@ -158,25 +165,31 @@ public class BookRepositoryTest {
 
         book.setPublisher(publisher);
         publisher.addBook(book);
+        //publisher.addBook(book2);
 
         bookRepository.save(book);
+        //bookRepository.save(book2);
         publisherRepository.save(publisher);
 
+
+        //book과 publisher 연관관계 삭제 -> orphan removal에 의한 book delete
         //book.setPublisher(null);
         //publisher.getBooks().clear();
         //bookRepository.deleteById(1L);
         //publisherRepository.deleteById(1L);
 
         //부모 entity에서 자식 entity삭제
-        System.out.println(publisher.getBooks().get(0));
-       publisher.getBooks().remove(0);
+        //System.out.println(publisher.getBooks().get(0));
+        publisher.getBooks().remove(0);
+
 
         //bookRepository.save(book);
         publisherRepository.save(publisher);
         //bookRepository.save(book);
 
+
         System.out.println("books : " + bookRepository.findAll());
-        System.out.println("book-publisher : " + bookRepository.findById(1L).get().getPublisher());
+        //System.out.println("book-publisher : " + bookRepository.findById(1L).get().getPublisher());
         System.out.println("publishers : " + publisherRepository.findAll());
     }
 

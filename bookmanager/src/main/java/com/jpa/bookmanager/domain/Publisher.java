@@ -20,7 +20,7 @@ public class Publisher extends BaseEntity{
 
     private String name;
 
-    @OneToMany(orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.PERSIST, orphanRemoval = true)
     @JoinColumn(name = "publisher_id")
     @ToString.Exclude
     private List<Book> books = new ArrayList<>();
