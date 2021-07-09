@@ -37,5 +37,9 @@
    '21.07.07
    
    15) orphan removal : https://bsh-developer.tistory.com/81
+
+   '21.07.09
+   
+   16) @query : https://bsh-developer.tistory.com/83
                      
  
