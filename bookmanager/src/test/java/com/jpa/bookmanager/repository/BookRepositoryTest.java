@@ -4,6 +4,7 @@ import com.jpa.bookmanager.domain.Book;
 import com.jpa.bookmanager.domain.Publisher;
 import com.jpa.bookmanager.domain.Review;
 import com.jpa.bookmanager.domain.User;
+import com.jpa.bookmanager.repository.dto.BookStatus;
 import org.hibernate.result.UpdateCountOutput;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -254,6 +255,23 @@ public class BookRepositoryTest {
 
         System.out.println(bookRepository.showTables());
 
+
+    }
+
+
+    @Test
+    void converterTest(){
+
+        bookRepository.findAll().forEach(System.out::println);
+
+        Book book = new Book();
+        book.setName("프론트");
+        book.setStatus(new BookStatus(200));
+
+        bookRepository.save(book);
+
+        //DB에 잘 들어갔는지 보고싶은데....?DB값을 보고싶은데..?--> native query
+        System.out.println(bookRepository.findRawRecord().values());
 
     }
 }

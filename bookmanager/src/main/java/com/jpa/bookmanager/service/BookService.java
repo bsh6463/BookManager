@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -68,6 +69,15 @@ public class BookService {
 //        Book book = bookRepository.findById(id).get();
 //        book.setName("바뀌나?");
 //        bookRepository.save(book);
+    }
+
+    public List<Book> getAll(){
+
+       List<Book> books = bookRepository.findAll();
+
+       books.forEach(System.out::println);
+
+       return books;
     }
 
 

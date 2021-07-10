@@ -3,7 +3,9 @@ package com.jpa.bookmanager.domain;
 
 import javax.persistence.*;
 
+import com.jpa.bookmanager.domain.converter.BookStatusConverter;
 import com.jpa.bookmanager.domain.listener.Auditable;
+import com.jpa.bookmanager.repository.dto.BookStatus;
 import lombok.*;
 import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.Where;
@@ -60,5 +62,18 @@ public class Book extends BaseEntity {
     public void addBookAndAuthors(BookAndAuthor ... bookAndAuthors){ //배열로 받겠다.
         Collections.addAll(this.bookAndAuthors, bookAndAuthors); //book 정보가 여러개 들어오면 한꺼번에 저장.
     }
+
+//    private int status; //판매상태
+//    public boolean isDisplayed(){
+//
+//        return status == 200;
+//
+//    }
+
+    //@Convert(converter = BookStatusConverter.class)//어떤컨버터 사용?
+    private BookStatus status;
+
+
+
 
 }

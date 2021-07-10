@@ -20,9 +20,9 @@ values (5, 'hyun', 'hyun@google.com', now(), now());
 
 insert into publisher(id, name) values (1, '탐사수');
 
-insert into book(id, name, publisher_id, `deleted`) values (1, '탐사수수수수', 1, false);
+insert into book(id, name, publisher_id, `deleted`, `status`) values (1, '탐사수수수수', 1, false, 100);
 
-insert into book(id, name, publisher_id, `deleted`) values (2,'삼다수', 1, false);
+insert into book(id, name, publisher_id, `deleted`, `status`) values (2,'삼다수', 1, false, 200);
 
-insert into book(id, name, publisher_id, `deleted`) values (3, '백산수', 1, true);
+insert into book(id, name, publisher_id, `deleted`, `status`) values (3, '백산수', 1, true, 100);
 

@@ -12,6 +12,7 @@ import org.springframework.data.repository.query.Param;
 import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 
 public interface BookRepository extends JpaRepository<Book, Long> {//enum타입, id타입
 
@@ -51,4 +52,7 @@ public interface BookRepository extends JpaRepository<Book, Long> {//enum타입,
 
     @Query(value = "show tables", nativeQuery = true)
     List<String> showTables();
+
+    @Query(value = "select * from book order by id desc limit 1", nativeQuery = true)
+    Map<String, Object> findRawRecord();
 }

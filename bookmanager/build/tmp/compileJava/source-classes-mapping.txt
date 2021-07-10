@@ -12,8 +12,8 @@ com/jpa/bookmanager/repository/UserHistoryRepository.java
  com.jpa.bookmanager.repository.UserHistoryRepository
 com/jpa/bookmanager/domain/listener/MyEntityListener.java
  com.jpa.bookmanager.domain.listener.MyEntityListener
-com/jpa/bookmanager/domain/Book.java
- com.jpa.bookmanager.domain.Book
+com/jpa/bookmanager/repository/dto/BookNameAndCategory.java
+ com.jpa.bookmanager.repository.dto.BookNameAndCategory
 com/jpa/bookmanager/domain/Gender.java
  com.jpa.bookmanager.domain.Gender
 com/jpa/bookmanager/repository/ReviewRepository.java
@@ -40,20 +40,24 @@ com/jpa/bookmanager/domain/UserHistory.java
  com.jpa.bookmanager.domain.UserHistory
 com/jpa/bookmanager/domain/Author.java
  com.jpa.bookmanager.domain.Author
-com/jpa/bookmanager/domain/BookAndAuthor.java
- com.jpa.bookmanager.domain.BookAndAuthor
+com/jpa/bookmanager/repository/dto/BookStatus.java
+ com.jpa.bookmanager.repository.dto.BookStatus
 com/jpa/bookmanager/domain/User.java
  com.jpa.bookmanager.domain.User
  com.jpa.bookmanager.domain.User$UserBuilder
+com/jpa/bookmanager/repository/BookRepository.java
+ com.jpa.bookmanager.repository.BookRepository
+com/jpa/bookmanager/domain/Book.java
+ com.jpa.bookmanager.domain.Book
+com/jpa/bookmanager/domain/BookAndAuthor.java
+ com.jpa.bookmanager.domain.BookAndAuthor
 com/jpa/bookmanager/domain/Review.java
  com.jpa.bookmanager.domain.Review
+com/jpa/bookmanager/service/BookService.java
+ com.jpa.bookmanager.service.BookService
 com/jpa/bookmanager/domain/Publisher.java
  com.jpa.bookmanager.domain.Publisher
 com/jpa/bookmanager/domain/BookReviewInfo.java
  com.jpa.bookmanager.domain.BookReviewInfo
-com/jpa/bookmanager/repository/dto/BookNameAndCategory.java
- com.jpa.bookmanager.repository.dto.BookNameAndCategory
-com/jpa/bookmanager/service/BookService.java
- com.jpa.bookmanager.service.BookService
-com/jpa/bookmanager/repository/BookRepository.java
- com.jpa.bookmanager.repository.BookRepository
+com/jpa/bookmanager/domain/converter/BookStatusConverter.java
+ com.jpa.bookmanager.domain.converter.BookStatusConverter
