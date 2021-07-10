@@ -41,8 +41,7 @@ public class User extends BaseEntity {
     private String testData;
 
 
-    @Enumerated(value = EnumType.STRING)
-    private Gender gender;
+
 
 
     @OneToMany(fetch = FetchType.EAGER) //이후에 자세히
@@ -56,6 +55,25 @@ public class User extends BaseEntity {
     @ToString.Exclude
     private List<Review> reviews = new ArrayList<>();
 
+    @Enumerated(value = EnumType.STRING)
+    private Gender gender;
 
+    @Embedded
+    @AttributeOverrides(
+            {@AttributeOverride(name = "city", column = @Column(name = "home_city")),
+            @AttributeOverride(name = "district", column = @Column(name = "home_district")),
+            @AttributeOverride(name = "detail", column = @Column(name = "home_address_detail")),
+            @AttributeOverride(name = "zipCode", column = @Column(name = "home_zip_code"))}
+    )
+    private Address homeAddress;
+
+    @Embedded
+    @AttributeOverrides(
+            {@AttributeOverride(name = "city", column = @Column(name = "company_city")),
+                    @AttributeOverride(name = "district", column = @Column(name = "company_district")),
+                    @AttributeOverride(name = "detail", column = @Column(name = "company_address_detail")),
+                    @AttributeOverride(name = "zipCode", column = @Column(name = "company_zip_code"))}
+    )
+    private Address companyAdress;
 
 }

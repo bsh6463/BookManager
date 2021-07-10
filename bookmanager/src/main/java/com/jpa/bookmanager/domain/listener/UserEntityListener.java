@@ -32,6 +32,9 @@ public class UserEntityListener {
 
         userHistory.setUser(user);
 
+        userHistory.setHomeAddress(user.getHomeAddress());
+        userHistory.setCompanyAdress(user.getCompanyAdress());
+
         userHistoryRepository.save(userHistory);
 
 

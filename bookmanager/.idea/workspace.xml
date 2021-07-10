@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be8c3b7-9940-47b2-8f28-0db59a295e15" name="Default Changelist" comment="210710, Native Query">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/converter/BookStatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/repository/dto/BookStatus.java" afterDir="false" />
+    <list default="true" id="9be8c3b7-9940-47b2-8f28-0db59a295e15" name="Default Changelist" comment="210710, Converter">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -18,26 +18,26 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/repository/BookRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/service/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/jpa/bookmanager/repository/BookRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/jpa/bookmanager/repository/BookRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.jpa.bookmanager.repository.BookRepositoryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.jpa.bookmanager.repository.BookRepositoryTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/UserHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/UserHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/listener/UserEntityListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/listener/UserEntityListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/jpa/bookmanager/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/jpa/bookmanager/service/BookServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.jpa.bookmanager.repository.BookRepositoryTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.jpa.bookmanager.repository.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.jpa.bookmanager.repository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.jpa.bookmanager.repository.BookRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.jpa.bookmanager.repository.BookRepositoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.jpa.bookmanager.repository.BookRepositoryTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/BookRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/BookRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/service/BookServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/UserHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/UserHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/listener/UserEntityListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/listener/UserEntityListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/UserRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +62,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,6 +89,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
@@ -103,10 +104,12 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jpa.bookmanager.repository" />
+      <recent name="com.jpa.bookmanager.service" />
       <recent name="com.jpa.bookmanager.repository.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BookRepositoryTest.converterTest">
+  <component name="RunManager" selected="Gradle.PhoneRepositoryTest.imbeddedTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -160,27 +163,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BookRepositoryTest.queryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.jpa.bookmanager.repository.BookRepositoryTest.queryTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="BookServiceTest.converterErrorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -202,12 +184,33 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ttttestTest.interfaceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PhoneRepositoryTest.imbeddedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.jpa.bookmanager.repository.dto.ttttestTest.interfaceTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.jpa.bookmanager.repository.PhoneRepositoryTest.imbeddedTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserRepositoryTest.embeddedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.jpa.bookmanager.repository.UserRepositoryTest.embeddedTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -232,11 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PhoneRepositoryTest.imbeddedTest" />
+        <item itemvalue="Gradle.UserRepositoryTest.embeddedTest" />
         <item itemvalue="Gradle.BookRepositoryTest.converterTest" />
         <item itemvalue="Gradle.BookServiceTest.converterErrorTest" />
         <item itemvalue="Gradle.BookRepositoryTest.nativeQueryTest" />
-        <item itemvalue="Gradle.ttttestTest.interfaceTest" />
-        <item itemvalue="Gradle.BookRepositoryTest.queryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +252,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625493067599</updated>
       <workItem from="1625493069018" duration="100000" />
-      <workItem from="1625493753718" duration="54362000" />
+      <workItem from="1625493753718" duration="60598000" />
     </task>
     <task id="LOCAL-00001" summary="210705">
       <created>1625494044594</created>
@@ -314,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625897605174</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="210710, Converter">
+      <created>1625906744189</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1625906744189</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +348,8 @@
     <MESSAGE value="210708, orphan removal" />
     <MESSAGE value="210709, @Query" />
     <MESSAGE value="210710, Native Query" />
-    <option name="LAST_COMMIT_MESSAGE" value="210710, Native Query" />
+    <MESSAGE value="210710, Converter" />
+    <option name="LAST_COMMIT_MESSAGE" value="210710, Converter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -359,6 +370,14 @@
           </properties>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/UserRepositoryTest.java</url>
+          <line>241</line>
+          <properties class="com.jpa.bookmanager.repository.UserRepositoryTest" method="embeddedTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/BookRepositoryTest.java</url>
           <line>185</line>
@@ -368,6 +387,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/BookRepositoryTest.java</url>
           <line>220</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/PhoneRepositoryTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalStateException" package="java.lang" />

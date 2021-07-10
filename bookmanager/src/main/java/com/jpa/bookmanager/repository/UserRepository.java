@@ -70,4 +70,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     Map<String, Object> findRawRecord();
     //value의 값이
 
+    @Query(value = "select * from user", nativeQuery = true)
+    List<Map<String, Object>> findAllRawRecord();
+
 }
