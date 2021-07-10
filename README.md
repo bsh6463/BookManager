@@ -41,5 +41,9 @@
    '21.07.09
    
    16) @query : https://bsh-developer.tistory.com/83
+
+   '21.07.10
+   
+   17) Native Query : https://bsh-developer.tistory.com/85
                      
  
