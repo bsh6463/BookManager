@@ -46,5 +46,6 @@
    
    17) Native Query : https://bsh-developer.tistory.com/85
    18) Converter : https://bsh-developer.tistory.com/86
+   19) imbedded type : https://bsh-developer.tistory.com/87
                      
  
