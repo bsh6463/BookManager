@@ -2,8 +2,6 @@ package com.jpa.bookmanager.repository;
 
 import com.jpa.bookmanager.domain.Book;
 import com.jpa.bookmanager.repository.dto.BookNameAndCategory;
-import org.apache.tomcat.jni.Local;
-import org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -11,8 +9,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import javax.persistence.Tuple;
-
+import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -43,4 +40,15 @@ public interface BookRepository extends JpaRepository<Book, Long> {//enum타입,
 
     @Query(value = "select new com.jpa.bookmanager.repository.dto.BookNameAndCategory(b.name, b.category) from Book b")
     List<BookNameAndCategory> findBookNameAndCategory(Pageable pageable); //message overloading
+
+    @Query(value = "select * from book", nativeQuery = true)
+    List<Book> findAllCustom();
+
+    @Transactional
+    @Modifying
+    @Query(value = "update book set category = '백엔드'", nativeQuery = true)
+    int updateCategories();
+
+    @Query(value = "show tables", nativeQuery = true)
+    List<String> showTables();
 }

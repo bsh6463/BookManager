@@ -14,6 +14,7 @@ import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 import java.awt.print.Pageable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @SpringBootTest
 public class BookRepositoryTest {
@@ -226,6 +227,33 @@ public class BookRepositoryTest {
 
        bookRepository.findBookNameAndCategory(PageRequest.of(0, 1)).forEach(
                 bookNameAndCategory -> System.out.println(bookNameAndCategory.getName() + " : " + bookNameAndCategory.getCategory()));
+
+    }
+
+    @Test
+    void nativeQueryTest(){
+
+//        System.out.println("JPQL : findAll");
+//        bookRepository.findAll().forEach(System.out::println);
+//
+//        System.out.println("SQL : findAllCustom");
+//        bookRepository.findAllCustom().forEach(System.out::println);
+
+        List<Book> books = bookRepository.findAll();
+        for(Book book : books){
+
+            book.setCategory("백엔드드");
+
+       }
+        bookRepository.saveAll(books);
+
+        System.out.println(bookRepository.findAll());
+
+        System.out.println("affected rows : " + bookRepository.updateCategories());
+        System.out.println(bookRepository.findAllCustom());
+
+        System.out.println(bookRepository.showTables());
+
 
     }
 }

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.jpa.bookmanager.repository.BookRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-09T14:18:39" hostname="LAPTOP-17QC8LHQ" time="0.228">
+<testsuite name="com.jpa.bookmanager.repository.BookRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-10T04:53:33" hostname="LAPTOP-17QC8LHQ" time="0.693">
   <properties/>
-  <testcase name="queryTest()" classname="com.jpa.bookmanager.repository.BookRepositoryTest" time="0.228"/>
-  <system-out><![CDATA[23:18:33.072 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-23:18:33.084 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-23:18:33.116 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.jpa.bookmanager.repository.BookRepositoryTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-23:18:33.127 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jpa.bookmanager.repository.BookRepositoryTest], using SpringBootContextLoader
-23:18:33.133 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.jpa.bookmanager.repository.BookRepositoryTest]: class path resource [com/jpa/bookmanager/repository/BookRepositoryTest-context.xml] does not exist
-23:18:33.134 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.jpa.bookmanager.repository.BookRepositoryTest]: class path resource [com/jpa/bookmanager/repository/BookRepositoryTestContext.groovy] does not exist
-23:18:33.134 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.jpa.bookmanager.repository.BookRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-23:18:33.135 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.jpa.bookmanager.repository.BookRepositoryTest]: BookRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:18:33.179 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.jpa.bookmanager.repository.BookRepositoryTest]
-23:18:33.253 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\bsh64\IdeaProjects\bookmanager\bookmanager\build\classes\java\main\com\jpa\bookmanager\BookmanagerApplication.class]
-23:18:33.254 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.jpa.bookmanager.BookmanagerApplication for test class com.jpa.bookmanager.repository.BookRepositoryTest
-23:18:33.378 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.jpa.bookmanager.repository.BookRepositoryTest]: using defaults.
-23:18:33.379 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-23:18:33.398 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@77fc33eb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41cd99d0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@281d1924, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3fb9e960, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@29ccf617, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e2f9e7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@44f60466, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34741771, org.springframework.test.context.event.EventPublishingTestExecutionListener@7ac623a6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6978d0d8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d593ca5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@9027fe0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4212b675, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6d4340ff, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@39abe5e6]
-23:18:33.402 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@39326c25 testClass = BookRepositoryTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1b4aab03 testClass = BookRepositoryTest, locations = '{}', classes = '{class com.jpa.bookmanager.BookmanagerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7e1e6097, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36e841c6, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5b3e2276, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@31276ae, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@475cad31, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@76641566], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
-23:18:33.436 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+  <testcase name="nativeQueryTest()" classname="com.jpa.bookmanager.repository.BookRepositoryTest" time="0.693"/>
+  <system-out><![CDATA[13:53:25.668 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+13:53:25.679 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+13:53:25.716 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.jpa.bookmanager.repository.BookRepositoryTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+13:53:25.732 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jpa.bookmanager.repository.BookRepositoryTest], using SpringBootContextLoader
+13:53:25.738 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.jpa.bookmanager.repository.BookRepositoryTest]: class path resource [com/jpa/bookmanager/repository/BookRepositoryTest-context.xml] does not exist
+13:53:25.739 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.jpa.bookmanager.repository.BookRepositoryTest]: class path resource [com/jpa/bookmanager/repository/BookRepositoryTestContext.groovy] does not exist
+13:53:25.741 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.jpa.bookmanager.repository.BookRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:53:25.742 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.jpa.bookmanager.repository.BookRepositoryTest]: BookRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:53:25.795 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.jpa.bookmanager.repository.BookRepositoryTest]
+13:53:25.896 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\bsh64\IdeaProjects\bookmanager\bookmanager\build\classes\java\main\com\jpa\bookmanager\BookmanagerApplication.class]
+13:53:25.898 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.jpa.bookmanager.BookmanagerApplication for test class com.jpa.bookmanager.repository.BookRepositoryTest
+13:53:26.042 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.jpa.bookmanager.repository.BookRepositoryTest]: using defaults.
+13:53:26.043 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+13:53:26.059 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@51e52d74, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3727c038, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@64c22c0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2e9d3ee8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@56eb28c2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5fc40427, org.springframework.test.context.transaction.TransactionalTestExecutionListener@38f9773d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7fd464b4, org.springframework.test.context.event.EventPublishingTestExecutionListener@7076feb4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@fec29a1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7c5ff7fe, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2072dd05, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@673604e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@9f99887, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@a1a6e41]
+13:53:26.062 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7914fd5a testClass = BookRepositoryTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@500ab732 testClass = BookRepositoryTest, locations = '{}', classes = '{class com.jpa.bookmanager.BookmanagerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7cc28bb5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@67c84e2a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@629560b5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3a635e6a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5f324561, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@5d64e047], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+13:53:26.090 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -27,22 +27,22 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.4.5)
 
-2021-07-09 23:18:33.783  INFO 24284 --- [    Test worker] c.j.b.repository.BookRepositoryTest      : Starting BookRepositoryTest using Java 11.0.11 on LAPTOP-17QC8LHQ with PID 24284 (started by bsh64 in C:\Users\bsh64\IdeaProjects\bookmanager\bookmanager)
-2021-07-09 23:18:33.785  INFO 24284 --- [    Test worker] c.j.b.repository.BookRepositoryTest      : No active profile set, falling back to default profiles: default
-2021-07-09 23:18:34.562  INFO 24284 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-07-09 23:18:34.650  INFO 24284 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 8 JPA repository interfaces.
-2021-07-09 23:18:35.244  INFO 24284 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-07-09 23:18:35.322  INFO 24284 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
-2021-07-09 23:18:35.510  INFO 24284 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-07-09 23:18:35.659  INFO 24284 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-07-09 23:18:36.074  INFO 24284 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-07-09 23:18:36.114  INFO 24284 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-10 13:53:26.432  INFO 12400 --- [    Test worker] c.j.b.repository.BookRepositoryTest      : Starting BookRepositoryTest using Java 11.0.11 on LAPTOP-17QC8LHQ with PID 12400 (started by bsh64 in C:\Users\bsh64\IdeaProjects\bookmanager\bookmanager)
+2021-07-10 13:53:26.434  INFO 12400 --- [    Test worker] c.j.b.repository.BookRepositoryTest      : No active profile set, falling back to default profiles: default
+2021-07-10 13:53:27.472  INFO 12400 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-10 13:53:27.583  INFO 12400 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 8 JPA repository interfaces.
+2021-07-10 13:53:28.333  INFO 12400 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-10 13:53:28.394  INFO 12400 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-07-10 13:53:28.572  INFO 12400 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-10 13:53:28.698  INFO 12400 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-10 13:53:29.191  INFO 12400 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-10 13:53:29.235  INFO 12400 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
 Hibernate: 
     
     alter table book 
        drop 
        foreign key FKgtvt7p649s4x80y6f4842pnfq
-2021-07-09 23:18:37.126  WARN 24284 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2021-07-10 13:53:30.250  WARN 12400 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table book 
        drop 
        foreign key FKgtvt7p649s4x80y6f4842pnfq" via JDBC Statement
@@ -194,7 +194,7 @@ Hibernate:
     alter table book_and_author 
        drop 
        foreign key FKausj53rbub57mqawp848k2m7f
-2021-07-09 23:18:37.140  WARN 24284 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2021-07-10 13:53:30.261  WARN 12400 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table book_and_author 
        drop 
        foreign key FKausj53rbub57mqawp848k2m7f" via JDBC Statement
@@ -346,7 +346,7 @@ Hibernate:
     alter table book_and_author 
        drop 
        foreign key FKmy2j3q01yh7e6brwdas6pfdlj
-2021-07-09 23:18:37.152  WARN 24284 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2021-07-10 13:53:30.274  WARN 12400 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table book_and_author 
        drop 
        foreign key FKmy2j3q01yh7e6brwdas6pfdlj" via JDBC Statement
@@ -498,7 +498,7 @@ Hibernate:
     alter table book_review_info 
        drop 
        foreign key FKp5fhkokpbtoxmc3mxo8ay9e5l
-2021-07-09 23:18:37.163  WARN 24284 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2021-07-10 13:53:30.286  WARN 12400 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table book_review_info 
        drop 
        foreign key FKp5fhkokpbtoxmc3mxo8ay9e5l" via JDBC Statement
@@ -650,7 +650,7 @@ Hibernate:
     alter table review 
        drop 
        foreign key FK70yrt09r4r54tcgkrwbeqenbs
-2021-07-09 23:18:37.174  WARN 24284 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2021-07-10 13:53:30.301  WARN 12400 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table review 
        drop 
        foreign key FK70yrt09r4r54tcgkrwbeqenbs" via JDBC Statement
@@ -802,7 +802,7 @@ Hibernate:
     alter table review 
        drop 
        foreign key FKiyf57dy48lyiftdrf7y87rnxi
-2021-07-09 23:18:37.184  WARN 24284 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2021-07-10 13:53:30.314  WARN 12400 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table review 
        drop 
        foreign key FKiyf57dy48lyiftdrf7y87rnxi" via JDBC Statement
@@ -954,7 +954,7 @@ Hibernate:
     alter table user_history 
        drop 
        foreign key FKaa6ilb6iqih95bntoeyysb2pc
-2021-07-09 23:18:37.194  WARN 24284 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2021-07-10 13:53:30.328  WARN 12400 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table user_history 
        drop 
        foreign key FKaa6ilb6iqih95bntoeyysb2pc" via JDBC Statement
@@ -1259,34 +1259,432 @@ Hibernate:
        add constraint FKaa6ilb6iqih95bntoeyysb2pc 
        foreign key (user_id) 
        references user (id)
-2021-07-09 23:18:37.599  INFO 24284 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-07-09 23:18:37.614  INFO 24284 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-07-09 23:18:38.878  WARN 24284 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-07-09 23:18:39.176  INFO 24284 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-09 23:18:39.250  INFO 24284 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/book_manager'
-2021-07-09 23:18:39.787  INFO 24284 --- [    Test worker] c.j.b.repository.BookRepositoryTest      : Started BookRepositoryTest in 6.344 seconds (JVM running for 7.549)
+2021-07-10 13:53:30.806  INFO 12400 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-10 13:53:30.818  INFO 12400 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-10 13:53:32.146  WARN 12400 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-10 13:53:32.463  INFO 12400 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-10 13:53:32.548  INFO 12400 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/book_manager'
+2021-07-10 13:53:33.172  INFO 12400 --- [    Test worker] c.j.b.repository.BookRepositoryTest      : Started BookRepositoryTest in 7.076 seconds (JVM running for 8.438)
 Hibernate: 
     select
-        book0_.name as col_0_0_,
-        book0_.category as col_1_0_ 
+        book0_.id as id1_1_,
+        book0_.created_at as created_2_1_,
+        book0_.updated_at as updated_3_1_,
+        book0_.author_id as author_i4_1_,
+        book0_.category as category5_1_,
+        book0_.deleted as deleted6_1_,
+        book0_.name as name7_1_,
+        book0_.publisher_id as publishe8_1_ 
     from
         book book0_ 
     where
         (
             book0_.deleted = 0
-        ) limit ?, ?
-삼다수 : null
+        )
 Hibernate: 
     select
-        book0_.name as col_0_0_,
-        book0_.category as col_1_0_ 
+        publisher0_.id as id1_4_0_,
+        publisher0_.created_at as created_2_4_0_,
+        publisher0_.updated_at as updated_3_4_0_,
+        publisher0_.name as name4_4_0_ 
+    from
+        publisher publisher0_ 
+    where
+        publisher0_.id=?
+Hibernate: 
+    select
+        bookreview0_.id as id1_3_2_,
+        bookreview0_.created_at as created_2_3_2_,
+        bookreview0_.updated_at as updated_3_3_2_,
+        bookreview0_.average_review_score as average_4_3_2_,
+        bookreview0_.book_id as book_id6_3_2_,
+        bookreview0_.review_count as review_c5_3_2_,
+        book1_.id as id1_1_0_,
+        book1_.created_at as created_2_1_0_,
+        book1_.updated_at as updated_3_1_0_,
+        book1_.author_id as author_i4_1_0_,
+        book1_.category as category5_1_0_,
+        book1_.deleted as deleted6_1_0_,
+        book1_.name as name7_1_0_,
+        book1_.publisher_id as publishe8_1_0_,
+        publisher2_.id as id1_4_1_,
+        publisher2_.created_at as created_2_4_1_,
+        publisher2_.updated_at as updated_3_4_1_,
+        publisher2_.name as name4_4_1_ 
+    from
+        book_review_info bookreview0_ 
+    inner join
+        book book1_ 
+            on bookreview0_.book_id=book1_.id 
+    left outer join
+        publisher publisher2_ 
+            on book1_.publisher_id=publisher2_.id 
+    where
+        bookreview0_.book_id=?
+Hibernate: 
+    select
+        bookreview0_.id as id1_3_2_,
+        bookreview0_.created_at as created_2_3_2_,
+        bookreview0_.updated_at as updated_3_3_2_,
+        bookreview0_.average_review_score as average_4_3_2_,
+        bookreview0_.book_id as book_id6_3_2_,
+        bookreview0_.review_count as review_c5_3_2_,
+        book1_.id as id1_1_0_,
+        book1_.created_at as created_2_1_0_,
+        book1_.updated_at as updated_3_1_0_,
+        book1_.author_id as author_i4_1_0_,
+        book1_.category as category5_1_0_,
+        book1_.deleted as deleted6_1_0_,
+        book1_.name as name7_1_0_,
+        book1_.publisher_id as publishe8_1_0_,
+        publisher2_.id as id1_4_1_,
+        publisher2_.created_at as created_2_4_1_,
+        publisher2_.updated_at as updated_3_4_1_,
+        publisher2_.name as name4_4_1_ 
+    from
+        book_review_info bookreview0_ 
+    inner join
+        book book1_ 
+            on bookreview0_.book_id=book1_.id 
+    left outer join
+        publisher publisher2_ 
+            on book1_.publisher_id=publisher2_.id 
+    where
+        bookreview0_.book_id=?
+Hibernate: 
+    select
+        book0_.id as id1_1_1_,
+        book0_.created_at as created_2_1_1_,
+        book0_.updated_at as updated_3_1_1_,
+        book0_.author_id as author_i4_1_1_,
+        book0_.category as category5_1_1_,
+        book0_.deleted as deleted6_1_1_,
+        book0_.name as name7_1_1_,
+        book0_.publisher_id as publishe8_1_1_,
+        publisher1_.id as id1_4_0_,
+        publisher1_.created_at as created_2_4_0_,
+        publisher1_.updated_at as updated_3_4_0_,
+        publisher1_.name as name4_4_0_ 
+    from
+        book book0_ 
+    left outer join
+        publisher publisher1_ 
+            on book0_.publisher_id=publisher1_.id 
+    where
+        book0_.id=? 
+        and (
+            book0_.deleted = 0
+        ) 
+Hibernate: 
+    select
+        bookreview0_.id as id1_3_2_,
+        bookreview0_.created_at as created_2_3_2_,
+        bookreview0_.updated_at as updated_3_3_2_,
+        bookreview0_.average_review_score as average_4_3_2_,
+        bookreview0_.book_id as book_id6_3_2_,
+        bookreview0_.review_count as review_c5_3_2_,
+        book1_.id as id1_1_0_,
+        book1_.created_at as created_2_1_0_,
+        book1_.updated_at as updated_3_1_0_,
+        book1_.author_id as author_i4_1_0_,
+        book1_.category as category5_1_0_,
+        book1_.deleted as deleted6_1_0_,
+        book1_.name as name7_1_0_,
+        book1_.publisher_id as publishe8_1_0_,
+        publisher2_.id as id1_4_1_,
+        publisher2_.created_at as created_2_4_1_,
+        publisher2_.updated_at as updated_3_4_1_,
+        publisher2_.name as name4_4_1_ 
+    from
+        book_review_info bookreview0_ 
+    inner join
+        book book1_ 
+            on bookreview0_.book_id=book1_.id 
+    left outer join
+        publisher publisher2_ 
+            on book1_.publisher_id=publisher2_.id 
+    where
+        bookreview0_.book_id=?
+Hibernate: 
+    select
+        book0_.id as id1_1_1_,
+        book0_.created_at as created_2_1_1_,
+        book0_.updated_at as updated_3_1_1_,
+        book0_.author_id as author_i4_1_1_,
+        book0_.category as category5_1_1_,
+        book0_.deleted as deleted6_1_1_,
+        book0_.name as name7_1_1_,
+        book0_.publisher_id as publishe8_1_1_,
+        publisher1_.id as id1_4_0_,
+        publisher1_.created_at as created_2_4_0_,
+        publisher1_.updated_at as updated_3_4_0_,
+        publisher1_.name as name4_4_0_ 
+    from
+        book book0_ 
+    left outer join
+        publisher publisher1_ 
+            on book0_.publisher_id=publisher1_.id 
+    where
+        book0_.id=? 
+        and (
+            book0_.deleted = 0
+        ) 
+Hibernate: 
+    select
+        bookreview0_.id as id1_3_2_,
+        bookreview0_.created_at as created_2_3_2_,
+        bookreview0_.updated_at as updated_3_3_2_,
+        bookreview0_.average_review_score as average_4_3_2_,
+        bookreview0_.book_id as book_id6_3_2_,
+        bookreview0_.review_count as review_c5_3_2_,
+        book1_.id as id1_1_0_,
+        book1_.created_at as created_2_1_0_,
+        book1_.updated_at as updated_3_1_0_,
+        book1_.author_id as author_i4_1_0_,
+        book1_.category as category5_1_0_,
+        book1_.deleted as deleted6_1_0_,
+        book1_.name as name7_1_0_,
+        book1_.publisher_id as publishe8_1_0_,
+        publisher2_.id as id1_4_1_,
+        publisher2_.created_at as created_2_4_1_,
+        publisher2_.updated_at as updated_3_4_1_,
+        publisher2_.name as name4_4_1_ 
+    from
+        book_review_info bookreview0_ 
+    inner join
+        book book1_ 
+            on bookreview0_.book_id=book1_.id 
+    left outer join
+        publisher publisher2_ 
+            on book1_.publisher_id=publisher2_.id 
+    where
+        bookreview0_.book_id=?
+Hibernate: 
+    update
+        book 
+    set
+        updated_at=?,
+        author_id=?,
+        category=?,
+        deleted=?,
+        name=?,
+        publisher_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        book 
+    set
+        updated_at=?,
+        author_id=?,
+        category=?,
+        deleted=?,
+        name=?,
+        publisher_id=? 
+    where
+        id=?
+Hibernate: 
+    select
+        book0_.id as id1_1_,
+        book0_.created_at as created_2_1_,
+        book0_.updated_at as updated_3_1_,
+        book0_.author_id as author_i4_1_,
+        book0_.category as category5_1_,
+        book0_.deleted as deleted6_1_,
+        book0_.name as name7_1_,
+        book0_.publisher_id as publishe8_1_ 
     from
         book book0_ 
     where
         (
             book0_.deleted = 0
-        ) limit ?
-탐사수수수수 : null
+        )
+Hibernate: 
+    select
+        publisher0_.id as id1_4_0_,
+        publisher0_.created_at as created_2_4_0_,
+        publisher0_.updated_at as updated_3_4_0_,
+        publisher0_.name as name4_4_0_ 
+    from
+        publisher publisher0_ 
+    where
+        publisher0_.id=?
+Hibernate: 
+    select
+        bookreview0_.id as id1_3_2_,
+        bookreview0_.created_at as created_2_3_2_,
+        bookreview0_.updated_at as updated_3_3_2_,
+        bookreview0_.average_review_score as average_4_3_2_,
+        bookreview0_.book_id as book_id6_3_2_,
+        bookreview0_.review_count as review_c5_3_2_,
+        book1_.id as id1_1_0_,
+        book1_.created_at as created_2_1_0_,
+        book1_.updated_at as updated_3_1_0_,
+        book1_.author_id as author_i4_1_0_,
+        book1_.category as category5_1_0_,
+        book1_.deleted as deleted6_1_0_,
+        book1_.name as name7_1_0_,
+        book1_.publisher_id as publishe8_1_0_,
+        publisher2_.id as id1_4_1_,
+        publisher2_.created_at as created_2_4_1_,
+        publisher2_.updated_at as updated_3_4_1_,
+        publisher2_.name as name4_4_1_ 
+    from
+        book_review_info bookreview0_ 
+    inner join
+        book book1_ 
+            on bookreview0_.book_id=book1_.id 
+    left outer join
+        publisher publisher2_ 
+            on book1_.publisher_id=publisher2_.id 
+    where
+        bookreview0_.book_id=?
+Hibernate: 
+    select
+        bookreview0_.id as id1_3_2_,
+        bookreview0_.created_at as created_2_3_2_,
+        bookreview0_.updated_at as updated_3_3_2_,
+        bookreview0_.average_review_score as average_4_3_2_,
+        bookreview0_.book_id as book_id6_3_2_,
+        bookreview0_.review_count as review_c5_3_2_,
+        book1_.id as id1_1_0_,
+        book1_.created_at as created_2_1_0_,
+        book1_.updated_at as updated_3_1_0_,
+        book1_.author_id as author_i4_1_0_,
+        book1_.category as category5_1_0_,
+        book1_.deleted as deleted6_1_0_,
+        book1_.name as name7_1_0_,
+        book1_.publisher_id as publishe8_1_0_,
+        publisher2_.id as id1_4_1_,
+        publisher2_.created_at as created_2_4_1_,
+        publisher2_.updated_at as updated_3_4_1_,
+        publisher2_.name as name4_4_1_ 
+    from
+        book_review_info bookreview0_ 
+    inner join
+        book book1_ 
+            on bookreview0_.book_id=book1_.id 
+    left outer join
+        publisher publisher2_ 
+            on book1_.publisher_id=publisher2_.id 
+    where
+        bookreview0_.book_id=?
+[Book(super=BaseEntity(createdAt=2021-07-10T13:53:30.848125, updatedAt=2021-07-10T13:53:33.613625), id=1, name=탐사수수수수, authorId=null, category=백엔드드, deleted=false), Book(super=BaseEntity(createdAt=2021-07-10T13:53:30.849558, updatedAt=2021-07-10T13:53:33.620189), id=2, name=삼다수, authorId=null, category=백엔드드, deleted=false)]
+Hibernate: 
+    update
+        book 
+    set
+        category = '백엔드'
+affected rows : 3
+Hibernate: 
+    select
+        * 
+    from
+        book
+Hibernate: 
+    select
+        publisher0_.id as id1_4_0_,
+        publisher0_.created_at as created_2_4_0_,
+        publisher0_.updated_at as updated_3_4_0_,
+        publisher0_.name as name4_4_0_ 
+    from
+        publisher publisher0_ 
+    where
+        publisher0_.id=?
+Hibernate: 
+    select
+        bookreview0_.id as id1_3_2_,
+        bookreview0_.created_at as created_2_3_2_,
+        bookreview0_.updated_at as updated_3_3_2_,
+        bookreview0_.average_review_score as average_4_3_2_,
+        bookreview0_.book_id as book_id6_3_2_,
+        bookreview0_.review_count as review_c5_3_2_,
+        book1_.id as id1_1_0_,
+        book1_.created_at as created_2_1_0_,
+        book1_.updated_at as updated_3_1_0_,
+        book1_.author_id as author_i4_1_0_,
+        book1_.category as category5_1_0_,
+        book1_.deleted as deleted6_1_0_,
+        book1_.name as name7_1_0_,
+        book1_.publisher_id as publishe8_1_0_,
+        publisher2_.id as id1_4_1_,
+        publisher2_.created_at as created_2_4_1_,
+        publisher2_.updated_at as updated_3_4_1_,
+        publisher2_.name as name4_4_1_ 
+    from
+        book_review_info bookreview0_ 
+    inner join
+        book book1_ 
+            on bookreview0_.book_id=book1_.id 
+    left outer join
+        publisher publisher2_ 
+            on book1_.publisher_id=publisher2_.id 
+    where
+        bookreview0_.book_id=?
+Hibernate: 
+    select
+        bookreview0_.id as id1_3_2_,
+        bookreview0_.created_at as created_2_3_2_,
+        bookreview0_.updated_at as updated_3_3_2_,
+        bookreview0_.average_review_score as average_4_3_2_,
+        bookreview0_.book_id as book_id6_3_2_,
+        bookreview0_.review_count as review_c5_3_2_,
+        book1_.id as id1_1_0_,
+        book1_.created_at as created_2_1_0_,
+        book1_.updated_at as updated_3_1_0_,
+        book1_.author_id as author_i4_1_0_,
+        book1_.category as category5_1_0_,
+        book1_.deleted as deleted6_1_0_,
+        book1_.name as name7_1_0_,
+        book1_.publisher_id as publishe8_1_0_,
+        publisher2_.id as id1_4_1_,
+        publisher2_.created_at as created_2_4_1_,
+        publisher2_.updated_at as updated_3_4_1_,
+        publisher2_.name as name4_4_1_ 
+    from
+        book_review_info bookreview0_ 
+    inner join
+        book book1_ 
+            on bookreview0_.book_id=book1_.id 
+    left outer join
+        publisher publisher2_ 
+            on book1_.publisher_id=publisher2_.id 
+    where
+        bookreview0_.book_id=?
+Hibernate: 
+    select
+        bookreview0_.id as id1_3_2_,
+        bookreview0_.created_at as created_2_3_2_,
+        bookreview0_.updated_at as updated_3_3_2_,
+        bookreview0_.average_review_score as average_4_3_2_,
+        bookreview0_.book_id as book_id6_3_2_,
+        bookreview0_.review_count as review_c5_3_2_,
+        book1_.id as id1_1_0_,
+        book1_.created_at as created_2_1_0_,
+        book1_.updated_at as updated_3_1_0_,
+        book1_.author_id as author_i4_1_0_,
+        book1_.category as category5_1_0_,
+        book1_.deleted as deleted6_1_0_,
+        book1_.name as name7_1_0_,
+        book1_.publisher_id as publishe8_1_0_,
+        publisher2_.id as id1_4_1_,
+        publisher2_.created_at as created_2_4_1_,
+        publisher2_.updated_at as updated_3_4_1_,
+        publisher2_.name as name4_4_1_ 
+    from
+        book_review_info bookreview0_ 
+    inner join
+        book book1_ 
+            on bookreview0_.book_id=book1_.id 
+    left outer join
+        publisher publisher2_ 
+            on book1_.publisher_id=publisher2_.id 
+    where
+        bookreview0_.book_id=?
+[Book(super=BaseEntity(createdAt=2021-07-10T13:53:30.848125, updatedAt=2021-07-10T13:53:33.613625), id=1, name=탐사수수수수, authorId=null, category=백엔드, deleted=false), Book(super=BaseEntity(createdAt=2021-07-10T13:53:30.849558, updatedAt=2021-07-10T13:53:33.620189), id=2, name=삼다수, authorId=null, category=백엔드, deleted=false), Book(super=BaseEntity(createdAt=2021-07-10T13:53:30.850435, updatedAt=2021-07-10T13:53:30.850435), id=3, name=백산수, authorId=null, category=백엔드, deleted=true)]
+Hibernate: 
+    show tables
+[author, book, book_and_author, book_review_info, publisher, review, user, user_history]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
