@@ -22,3 +22,5 @@ com/jpa/bookmanager/repository/UserRepositoryTest.java
  com.jpa.bookmanager.repository.UserRepositoryTest
 com/jpa/bookmanager/repository/CommentRepositoryTest.java
  com.jpa.bookmanager.repository.CommentRepositoryTest
+com/jpa/bookmanager/service/CommentServiceTest.java
+ com.jpa.bookmanager.service.CommentServiceTest

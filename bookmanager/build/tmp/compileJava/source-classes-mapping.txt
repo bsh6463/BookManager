@@ -67,3 +67,5 @@ com/jpa/bookmanager/repository/CommentRepository.java
  com.jpa.bookmanager.repository.CommentRepository
 com/jpa/bookmanager/domain/Comment.java
  com.jpa.bookmanager.domain.Comment
+com/jpa/bookmanager/service/CommentService.java
+ com.jpa.bookmanager.service.CommentService
