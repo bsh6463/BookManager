@@ -70,7 +70,7 @@ public class Book extends BaseEntity {
 //
 //    }
 
-    //@Convert(converter = BookStatusConverter.class)//어떤컨버터 사용?
+    @Convert(converter = BookStatusConverter.class)//어떤컨버터 사용?
     private BookStatus status;
 
 

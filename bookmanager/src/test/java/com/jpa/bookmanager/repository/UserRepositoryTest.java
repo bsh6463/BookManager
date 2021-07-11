@@ -4,8 +4,6 @@ import com.jpa.bookmanager.domain.Address;
 import com.jpa.bookmanager.domain.Gender;
 import com.jpa.bookmanager.domain.User;
 import com.jpa.bookmanager.domain.UserHistory;
-import org.assertj.core.util.Lists;
-import org.hibernate.criterion.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,14 +11,7 @@ import org.springframework.data.domain.*;
 
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.*;
-import static org.springframework.data.domain.ExampleMatcher.GenericPropertyMatchers.contains;
-import static org.springframework.data.domain.ExampleMatcher.GenericPropertyMatchers.endsWith;
 
 @SpringBootTest
 @Transactional
@@ -246,21 +237,21 @@ class UserRepositoryTest {
         User user = new User();
         user.setName("hyun");
         user.setHomeAddress(new Address("서울시", "송파구", "송파대로", "0000"));
-        user.setCompanyAdress(new Address("서울시", "강남구", "강남대로","0000"));
+        user.setCompanyAddress(new Address("서울시", "강남구", "강남대로","0000"));
 
         userRepository.save(user);
 
         User user1 = new User();
         user1.setName("bababa");
         user1.setHomeAddress(null);
-        user1.setCompanyAdress(null);
+        user1.setCompanyAddress(null);
 
         userRepository.save(user1);
 
         User user2 = new User();
         user2.setName("AAAAA");
         user2.setHomeAddress(new Address());
-        user2.setCompanyAdress(new Address());
+        user2.setCompanyAddress(new Address());
 
         userRepository.save(user2);
 

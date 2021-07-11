@@ -15,7 +15,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
-
 @Builder
 @Entity //Entity에는 primary key가 꼭 필요함., JPA가 관리하고 있는 객체
 @Table
@@ -41,16 +40,13 @@ public class User extends BaseEntity {
     private String testData;
 
 
-
-
-
-    @OneToMany(fetch = FetchType.EAGER) //이후에 자세히
+    @OneToMany(fetch = FetchType.LAZY) //이후에 자세히
     @JoinColumn(name = "user_id", insertable = false, updatable = false) //엔티티가 어떤 컬럼으로 조인을 하게 될지 지정해주는 annotation
     @ToString.Exclude
     private List<UserHistory> userHistories = new ArrayList<>();
 
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     @ToString.Exclude
     private List<Review> reviews = new ArrayList<>();
@@ -74,6 +70,6 @@ public class User extends BaseEntity {
                     @AttributeOverride(name = "detail", column = @Column(name = "company_address_detail")),
                     @AttributeOverride(name = "zipCode", column = @Column(name = "company_zip_code"))}
     )
-    private Address companyAdress;
+    private Address companyAddress;
 
 }

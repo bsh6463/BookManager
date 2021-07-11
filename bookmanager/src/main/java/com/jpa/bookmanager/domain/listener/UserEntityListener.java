@@ -4,13 +4,9 @@ import com.jpa.bookmanager.domain.User;
 import com.jpa.bookmanager.domain.UserHistory;
 import com.jpa.bookmanager.repository.UserHistoryRepository;
 import com.jpa.bookmanager.support.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.PostPersist;
 import javax.persistence.PostUpdate;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
 
 //@Component //bean으로 등록
 public class UserEntityListener {
@@ -33,7 +29,7 @@ public class UserEntityListener {
         userHistory.setUser(user);
 
         userHistory.setHomeAddress(user.getHomeAddress());
-        userHistory.setCompanyAdress(user.getCompanyAdress());
+        userHistory.setCompanyAdress(user.getCompanyAddress());
 
         userHistoryRepository.save(userHistory);
 

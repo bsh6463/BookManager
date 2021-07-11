@@ -5,7 +5,7 @@ import com.jpa.bookmanager.repository.dto.BookStatus;
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 
-@Converter(autoApply = true)
+@Converter
 public class BookStatusConverter implements AttributeConverter<BookStatus, Integer> {
 
     @Override
