@@ -51,8 +51,8 @@ com/jpa/bookmanager/domain/listener/UserEntityListener.java
  com.jpa.bookmanager.domain.listener.UserEntityListener
 com/jpa/bookmanager/service/UserService.java
  com.jpa.bookmanager.service.UserService
-com/jpa/bookmanager/domain/Comment.java
- com.jpa.bookmanager.domain.Comment
+com/jpa/bookmanager/repository/ReviewRepository.java
+ com.jpa.bookmanager.repository.ReviewRepository
 com/jpa/bookmanager/service/BookService.java
  com.jpa.bookmanager.service.BookService
 com/jpa/bookmanager/domain/BookAndAuthor.java
@@ -63,5 +63,7 @@ com/jpa/bookmanager/domain/Publisher.java
  com.jpa.bookmanager.domain.Publisher
 com/jpa/bookmanager/domain/BookReviewInfo.java
  com.jpa.bookmanager.domain.BookReviewInfo
-com/jpa/bookmanager/repository/ReviewRepository.java
- com.jpa.bookmanager.repository.ReviewRepository
+com/jpa/bookmanager/repository/CommentRepository.java
+ com.jpa.bookmanager.repository.CommentRepository
+com/jpa/bookmanager/domain/Comment.java
+ com.jpa.bookmanager.domain.Comment

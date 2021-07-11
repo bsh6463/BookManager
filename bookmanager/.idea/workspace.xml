@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be8c3b7-9940-47b2-8f28-0db59a295e15" name="Default Changelist" comment="210710, Imbedded type">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/ReviewRepositoryTest.java" afterDir="false" />
+    <list default="true" id="9be8c3b7-9940-47b2-8f28-0db59a295e15" name="Default Changelist" comment="210711, fetch type, n+1 issue">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/repository/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/CommentRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -18,27 +18,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/listener/UserEntityListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/listener/UserEntityListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jpa/bookmanager/domain/Comment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/jpa/bookmanager/repository/UserRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/jpa/bookmanager/repository/UserRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.jpa.bookmanager.repository.ReviewRepositoryTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.jpa.bookmanager.repository.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.jpa.bookmanager.repository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.jpa.bookmanager.repository.ReviewRepositoryTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/converter/BookStatusConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/converter/BookStatusConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/listener/UserEntityListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/listener/UserEntityListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/repository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/bookmanager/domain/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/UserRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +93,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jpa.bookmanager.repository" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -110,7 +105,7 @@
       <recent name="com.jpa.bookmanager.repository.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ReviewRepositoryTest.reviewTest">
+  <component name="RunManager" selected="Gradle.CommentRepositoryTest.commentTest">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -145,12 +140,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BookServiceTest.converterErrorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CommentRepositoryTest.commentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.jpa.bookmanager.service.BookServiceTest.converterErrorTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.jpa.bookmanager.repository.CommentRepositoryTest.commentTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -238,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CommentRepositoryTest.commentTest" />
+        <item itemvalue="Gradle.UserRepositoryTest.embeddedTest" />
         <item itemvalue="Gradle.ReviewRepositoryTest.reviewTest" />
         <item itemvalue="Gradle.PhoneRepositoryTest.imbeddedTest" />
-        <item itemvalue="Gradle.UserRepositoryTest.embeddedTest" />
         <item itemvalue="Gradle.BookRepositoryTest.converterTest" />
-        <item itemvalue="Gradle.BookServiceTest.converterErrorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +251,7 @@
       <updated>1625493067599</updated>
       <workItem from="1625493069018" duration="100000" />
       <workItem from="1625493753718" duration="63934000" />
-      <workItem from="1625976704874" duration="9871000" />
+      <workItem from="1625976704874" duration="15128000" />
     </task>
     <task id="LOCAL-00001" summary="210705">
       <created>1625494044594</created>
@@ -335,7 +330,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625916643919</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="210711, fetch type, n+1 issue">
+      <created>1625987322582</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1625987322582</updated>
+    </task>
+    <task id="LOCAL-00013" summary="210711, fetch type, n+1 issue">
+      <created>1625987354207</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1625987354207</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +371,8 @@
     <MESSAGE value="210710, Native Query" />
     <MESSAGE value="210710, Converter" />
     <MESSAGE value="210710, Imbedded type" />
-    <option name="LAST_COMMIT_MESSAGE" value="210710, Imbedded type" />
+    <MESSAGE value="210711, fetch type, n+1 issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="210711, fetch type, n+1 issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -385,7 +395,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/UserRepositoryTest.java</url>
-          <line>232</line>
+          <line>235</line>
           <properties class="com.jpa.bookmanager.repository.UserRepositoryTest" method="embeddedTest">
             <option name="EMULATED" value="true" />
           </properties>
@@ -398,6 +408,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/CommentRepositoryTest.java</url>
+          <line>24</line>
+          <properties class="com.jpa.bookmanager.repository.CommentRepositoryTest" method="commentTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/jpa/bookmanager/repository/BookRepositoryTest.java</url>

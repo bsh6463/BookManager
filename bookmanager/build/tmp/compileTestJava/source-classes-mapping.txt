@@ -8,8 +8,8 @@ com/jpa/bookmanager/service/UserServiceTest.java
  com.jpa.bookmanager.service.UserServiceTest
 com/jpa/bookmanager/repository/BookReviewInfoRepositoryTest.java
  com.jpa.bookmanager.repository.BookReviewInfoRepositoryTest
-com/jpa/bookmanager/repository/UserRepositoryTest.java
- com.jpa.bookmanager.repository.UserRepositoryTest
+com/jpa/bookmanager/repository/BookRepositoryTest.java
+ com.jpa.bookmanager.repository.BookRepositoryTest
 com/jpa/bookmanager/domain/UserTest.java
  com.jpa.bookmanager.domain.UserTest
 com/jpa/bookmanager/service/BookServiceTest.java
@@ -18,5 +18,7 @@ com/jpa/bookmanager/repository/AuthorRepositoryTest.java
  com.jpa.bookmanager.repository.AuthorRepositoryTest
 com/jpa/bookmanager/repository/ReviewRepositoryTest.java
  com.jpa.bookmanager.repository.ReviewRepositoryTest
-com/jpa/bookmanager/repository/BookRepositoryTest.java
- com.jpa.bookmanager.repository.BookRepositoryTest
+com/jpa/bookmanager/repository/UserRepositoryTest.java
+ com.jpa.bookmanager.repository.UserRepositoryTest
+com/jpa/bookmanager/repository/CommentRepositoryTest.java
+ com.jpa.bookmanager.repository.CommentRepositoryTest

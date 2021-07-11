@@ -13,6 +13,9 @@ import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 import java.util.List;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertAll;
+
 @SpringBootTest
 @Transactional
 class UserRepositoryTest {
@@ -260,5 +263,7 @@ class UserRepositoryTest {
         userRepository.findAll().forEach(System.out::println);
 
         userRepository.findAllRawRecord().forEach(a-> System.out.println(a.values()));
+
+
     }
 }
