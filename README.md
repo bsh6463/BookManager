@@ -50,5 +50,6 @@
    '21.07.11
    20) fetch type, N+1 : https://bsh-developer.tistory.com/88
    21) persistance Context, cache : https://bsh-developer.tistory.com/89
+   22) dirty check : https://bsh-developer.tistory.com/90
                      
  
