@@ -33,7 +33,6 @@
    13) Transaction(Propagation): https://bsh-developer.tistory.com/79
    14) Cascade : https://bsh-developer.tistory.com/80
 
-
    '21.07.07
    
    15) orphan removal : https://bsh-developer.tistory.com/81
@@ -47,5 +46,8 @@
    17) Native Query : https://bsh-developer.tistory.com/85
    18) Converter : https://bsh-developer.tistory.com/86
    19) imbedded type : https://bsh-developer.tistory.com/87
+
+   '21.07.11
+   20) fetch type, N+1 : https://bsh-developer.tistory.com/88
                      
  
